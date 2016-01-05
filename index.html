@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>
+    </title>
+  </head>
+  <body>
+    <h1>WELCOME TO THE GUESSING GAME!!!!! woooooooohoooooo!!!!</h1>
+    <script>
+    var userName = prompt("What is your name?");
+    alert("Whats crackalackin, " + userName + "?");
+    console.log("The users name is " + userName);
+    var userAnswer1 = prompt("Does New York City have more than 20 million people? Y or N").toUpperCase();
+    console.log("Answer for question 1 is " + userAnswer1);
+    if (userAnswer1 === "Y") {
+      alert("NO MAN, COME ON!! That is WAAAAY to many people.");
+    }
+    else {
+      alert("Correctomundo. As far as I know, there is no more than 8 - 10 million living in NYC");
+    }
+    var userAnswer2 = prompt("Does it take more than 100 hours to drive from NJ to CA at 70 mph without stopping? Y or N").toUpperCase();
+    console.log("Answer for question 2 is " + userAnswer2);
+    if (userAnswer2 === "Y") {
+      alert("You must have never drive cross country before. Or seen a map for that matter.");
+    }
+    else {
+      alert("You are correct. You would probably be in russia by than. Depending on the direction you are driving.");
+    }
+    alert("Time for the LAST and FINAL question, " + userName + ", are you ready??\
+     If you get this wrong,things could go bad for you. REALLY BAD!!");
+     var userAnswer3 = prompt("Is the following a question? 'How Much wood could a woodchuck\
+     chuck if a woodchuck could chuck wood.' Y or N, or.... trick question? ").toUpperCase();
+     console.log("User answer for question 3 is " + userAnswer3);
+     if (userAnswer3 === "TRICK QUESTION") {
+       alert("Wow. You just blew my mind. Im not sure if it is a trick question or not, but... you rock.");
+     }
+     else {
+       alert("WRONG. You lose the game and are banished for all of eternity to a dungeon inside your mind that you will never escape!!");
+     }
+    </script>
+  </body>
+</html>
