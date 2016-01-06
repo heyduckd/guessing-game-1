@@ -9,6 +9,7 @@
     var userName = prompt("What is your name?");
     alert("Whats crackalackin, " + userName + "?");
     console.log("The users name is " + userName);
+    var count = 0;
     var userAnswer1 = prompt("Does New York City have more than 20 million people? Y or N").toUpperCase();
     console.log("Answer for question 1 is " + userAnswer1);
     if (userAnswer1 === "Y") {
@@ -16,6 +17,7 @@
     }
     else {
       alert("Correctomundo. As far as I know, there is no more than 8 - 10 million living in NYC");
+      count += 1;
     }
     var userAnswer2 = prompt("Does it take more than 100 hours to drive from NJ to CA at 70 mph without stopping? Y or N").toUpperCase();
     console.log("Answer for question 2 is " + userAnswer2);
@@ -24,6 +26,7 @@
     }
     else {
       alert("You are correct. You would probably be in russia by than. Depending on the direction you are driving.");
+      count += 1;
     }
     alert("Time for the LAST and FINAL question, " + userName + ", are you ready??\
      If you get this wrong,things could go bad for you. REALLY BAD!!");
@@ -32,9 +35,30 @@
      console.log("User answer for question 3 is " + userAnswer3);
      if (userAnswer3 === "TRICK QUESTION") {
        alert("Wow. You just blew my mind. Im not sure if it is a trick question or not, but... you rock.");
+        count += 1;
      }
      else {
        alert("WRONG. You lose the game and are banished for all of eternity to a dungeon inside your mind that you will never escape!!");
+     }
+     var userAnswer4 = prompt("How many times in the last 2 years have I been on an air-plane?");
+     console.log("User answer for question 4 is " + userAnswer4);
+     if (userAnswer4 < 7) {
+       alert("Wrong. Too low.");
+     }
+     else if(userAnswer4 > 7) {
+       alert("Sorey, too High.");
+     }
+     else {
+       alert("CORRECT!!!!!!!!!!! :) ");
+       count += 1;
+     }
+     alert("Ok man, look. You have gotten " + count + " of my questions correct. THAT MEANS YOU GOT EVERY SINGLE ONE!!!! Don't tell anyone, but you now will be able to fly if you jump off a tall building......\ but WAIT!!! One last goodbye question.");
+     var jump = prompt("Did you believe when I said that you could fly off of a building because you got all 4 answers? Y or N");
+     if(jump === "Y") {
+       alert("Wow. You got more issues than I realized. You need help.");
+     }
+     else {
+       alert("PHEWWWW. I thought I was gonna need a lawyer so I could protect my self when I got sued by you. Or your family if you didn't survive. GREAT! I will now give you 1,000$. Just close your eyes and think real hard about the 1,000$ while rubbing your tummy and patting your head, and it will appear in front of you after 30 seconds."):
      }
     </script>
   </body>
